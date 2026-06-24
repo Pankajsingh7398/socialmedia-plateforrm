@@ -1,0 +1,9 @@
+{
+  "name": "social-media-frontend",
+  "version": "1.0.0",
+  "description": "ConnectShare Frontend",
+  "scripts": {
+    "start": "npx serve -l 3000",
+    "dev": "npx serve -l 3000"
+  }
+}

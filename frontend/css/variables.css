@@ -1,0 +1,132 @@
+:root {
+  --font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Border radius */
+  --radius-xs:   8px;
+  --radius-sm:   12px;
+  --radius-md:   16px;
+  --radius-lg:   20px;
+  --radius-xl:   24px;
+  --radius-2xl:  28px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-xs:   0 1px 3px rgba(124, 92, 255, 0.05);
+  --shadow-sm:   0 2px 8px rgba(124, 92, 255, 0.07);
+  --shadow-md:   0 8px 24px rgba(124, 92, 255, 0.12);
+  --shadow-lg:   0 16px 48px rgba(124, 92, 255, 0.16);
+  --shadow-xl:   0 24px 64px rgba(124, 92, 255, 0.22);
+  --shadow-glow: 0 0 40px rgba(124, 92, 255, 0.25);
+  --shadow-glow-sm: 0 0 20px rgba(124, 92, 255, 0.18);
+
+  /* Transitions */
+  --transition:     0.22s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fast: 0.12s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  --spring:         0.28s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* Layout */
+  --sidebar-width:    280px;
+  --rightbar-width:   320px;
+  --navbar-height:    68px;
+  --bottom-nav-height: 64px;
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, #7C5CFF 0%, #5B8CFF 50%, #00C2FF 100%);
+  --gradient-primary-hover: linear-gradient(135deg, #6a4df0 0%, #4a7bee 50%, #00aee8 100%);
+  --gradient-soft:    linear-gradient(135deg, rgba(124, 92, 255, 0.12) 0%, rgba(0, 194, 255, 0.08) 100%);
+  --gradient-warm:    linear-gradient(135deg, #FF6B6B, #FF9B44);
+  --gradient-cool:    linear-gradient(135deg, #4ECDC4, #44A08D);
+
+  /* Story ring */
+  --story-ring: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+/* ── Light Theme ─────────────────────────────────────────── */
+[data-theme="light"] {
+  --bg-primary:       #f4f6fb;
+  --bg-secondary:     #eef1f8;
+  --bg-tertiary:      #e4e9f4;
+  --bg-hover:         #dce3f0;
+  --bg-card-raised:   #fff;
+
+  --text-primary:     #0d1321;
+  --text-secondary:   #5a6478;
+  --text-muted:       #8b95a8;
+  --text-inverse:     #ffffff;
+
+  --border:           rgba(124, 92, 255, 0.1);
+  --border-strong:    rgba(124, 92, 255, 0.2);
+
+  --accent:           #7C5CFF;
+  --accent-mid:       #5B8CFF;
+  --accent-cyan:      #00C2FF;
+  --accent-hover:     #6a4df0;
+  --accent-light:     rgba(124, 92, 255, 0.08);
+  --accent-light-md:  rgba(124, 92, 255, 0.14);
+
+  --danger:           #ef4444;
+  --danger-light:     rgba(239, 68, 68, 0.1);
+  --success:          #10b981;
+  --success-light:    rgba(16, 185, 129, 0.1);
+  --warning:          #f59e0b;
+  --warning-light:    rgba(245, 158, 11, 0.1);
+
+  --card-bg:          rgba(255, 255, 255, 0.92);
+  --glass-bg:         rgba(255, 255, 255, 0.78);
+  --glass-strong:     rgba(255, 255, 255, 0.95);
+  --input-bg:         rgba(255, 255, 255, 0.95);
+  --overlay:          rgba(13, 19, 33, 0.55);
+  --skeleton:         #e4e9f4;
+  --skeleton-shine:   #f0f4ff;
+}
+
+/* ── Dark Theme ──────────────────────────────────────────── */
+[data-theme="dark"] {
+  --bg-primary:       #0a0e1a;
+  --bg-secondary:     #0f1525;
+  --bg-tertiary:      #161d30;
+  --bg-hover:         #1e2740;
+  --bg-card-raised:   #1a2235;
+
+  --text-primary:     #f0f4ff;
+  --text-secondary:   #9aa5be;
+  --text-muted:       #6b7690;
+  --text-inverse:     #0d1321;
+
+  --border:           rgba(124, 92, 255, 0.14);
+  --border-strong:    rgba(124, 92, 255, 0.25);
+
+  --accent:           #9b7fff;
+  --accent-mid:       #6b9fff;
+  --accent-cyan:      #33d4ff;
+  --accent-hover:     #b49aff;
+  --accent-light:     rgba(124, 92, 255, 0.14);
+  --accent-light-md:  rgba(124, 92, 255, 0.22);
+
+  --danger:           #f87171;
+  --danger-light:     rgba(248, 113, 113, 0.12);
+  --success:          #34d399;
+  --success-light:    rgba(52, 211, 153, 0.12);
+  --warning:          #fbbf24;
+  --warning-light:    rgba(251, 191, 36, 0.12);
+
+  --card-bg:          rgba(22, 29, 48, 0.92);
+  --glass-bg:         rgba(15, 21, 37, 0.82);
+  --glass-strong:     rgba(22, 29, 48, 0.98);
+  --input-bg:         rgba(10, 14, 26, 0.92);
+  --overlay:          rgba(0, 0, 0, 0.78);
+  --skeleton:         #1e2740;
+  --skeleton-shine:   #243050;
+}
+
+/* ── Responsive Variable Overrides ───────────────────────── */
+@media (max-width: 1024px) {
+  :root { --sidebar-width: 240px; --rightbar-width: 280px; }
+}
+@media (max-width: 768px) {
+  :root { --navbar-height: 60px; --bottom-nav-height: 60px; --radius-lg: 16px; --radius-xl: 20px; }
+}
+@media (max-width: 480px) {
+  :root { --navbar-height: 56px; --bottom-nav-height: 58px; --radius-sm: 10px; --radius-md: 14px; }
+}

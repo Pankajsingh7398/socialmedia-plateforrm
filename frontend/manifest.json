@@ -1,0 +1,18 @@
+{
+  "name": "Pulse",
+  "short_name": "Pulse",
+  "description": "Premium social networking platform",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0e1a",
+  "theme_color": "#7C5CFF",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
